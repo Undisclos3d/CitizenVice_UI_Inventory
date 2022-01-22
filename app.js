@@ -33,7 +33,7 @@ $(() => {
 			if (data.weight) {
 				let current_weight = data.weight.current.toFixed(1)
 				let max_weight = data.weight.max.toFixed(1)
-				$('#player').find('.inv-weight').html(`<div class="weight"><span class="cur-weight">${current_weight}<span style="color: whitesmoke">KG</span></span><span class="max-weight">/ ${max_weight}KG</span></div>
+				$('#player').find('.inv-weight').html(`Poids<div class="weight"><span class="cur-weight">${current_weight}<span style="color: whitesmoke">KG</span></span><span class="max-weight">/ ${max_weight}KG</span></div>
 				<div class="weight-jauge"
 				style="width:${max_weight * 100 / max_weight }%">
 				<div class="cur-jauge "
@@ -47,7 +47,7 @@ $(() => {
 				let current_weight = data.weight.current.toFixed(1)
 				let max_weight = data.weight.max.toFixed(1)
 				$('#other').find('.title').html(`${data.label}`)
-				$('#other').find('.inv-weight').html(`<span class="cur-weight">${current_weight}<span style="color: whitesmoke">KG</span></span><span class="max-weight">/ ${max_weight}KG</span>`)
+				$('#other').find('.inv-weight').html(`Poids<span class="cur-weight">${current_weight}<span style="color: whitesmoke">KG</span></span><span class="max-weight">/ ${max_weight}KG</span>`)
 			} else {
 				$('#other').find('.title').html(`${data.label}`)
 			}
