@@ -1,4 +1,4 @@
-# Fast and dirty for demo purpuse only
+# Fast and dirty for demonstration purpose only
 
 ## CitizenVice_UI_Inventory
 
