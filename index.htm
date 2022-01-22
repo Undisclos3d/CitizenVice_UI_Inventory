@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Citizen Vice Inventory</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<link rel="stylesheet" href="./index.css">
+
+	<script src="./libs/jquery.min.js" defer></script>
+	<script src="./libs/jquery-ui.min.js" defer></script>
+	<script src="./app.js" defer></script>
+	<script src="./debug.js" defer></script>
+</head>
+
+<body>
+	<div id="app">
+		<div class="inventory" id="player">
+			<div class="title" onclick="javascript:debug_Fullscreen()">INVENTAIRE</div>
+			<div class="inv-data">
+				<div class="no-items"><i class="fas fa-exclamation-circle"></i></div>
+				<div class="slots">
+				</div>
+			</div>
+
+			<div class="bottom">
+				<div class="inv-weight">
+				</div>
+				<div id="logoCV"></div>
+				<div class="action">
+					<div class="inv-actions">
+						<div class="inv-actions-title"></div>
+						<div class="inv-actions-desc"></div>
+						<div class="wrapper">
+							<input type="number" value="1" id="count">
+							<div class="btn">
+								<div class="inv-button" id="use">UTILISER</div>
+								<div class="inv-button" id="give">DONNER</div>
+							</div>
+							<select name="" id="players"></select>
+							<div class="inv-button" id="gunBar"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="inv-hotbar"></div>
+		</div>
+		<div class="inventory" id="other">
+			<div class="title"></div>
+			<div class=" inv-data">
+				<div class="no-items">Inventaire Vide</div>
+				<div class="slots"></div>
+			</div>
+			<div class="bottom">
+				<div class="inv-weight"></div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
